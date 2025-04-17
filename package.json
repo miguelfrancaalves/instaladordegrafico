@@ -1,0 +1,61 @@
+{
+  "name": "instalador-graficos",
+  "version": "1.0.1",
+  "description": "Instalador de pacotes gráficos para GTA V e FiveM",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --win --x64",
+    "build:simple": "electron-builder --win --x64 --dir",
+    "build:portable": "electron-builder --win --x64 -p never --config.win.target=portable",
+    "pack": "electron-packager . \"Instalador de Gráficos\" --platform=win32 --arch=x64 --out=build --overwrite --icon=assets/icon.ico",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Miguel França",
+  "license": "MIT",
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.instalador.graficos",
+    "productName": "Instalador de Gráficos",
+    "asar": false,
+    "compression": "normal",
+    "forceCodeSigning": false,
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "publisherName": "Miguel França",
+      "artifactName": "${productName} ${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Instalador de Gráficos BYS",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "deleteAppDataOnUninstall": true,
+      "language": 1046
+    },
+    "icon": "assets/icon.ico",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "script.js",
+      "styles.css",
+      "assets/**/*",
+      "package.json",
+      "node_modules/**/*"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalador de Gráficos - By Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-photo-film"></i>
+                <h1>Instalador de Gráficos - By Store</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="tab-content">
+                <section id="installation">
+                    <h2>Instalação de Gráficos - By Store</h2>
+
+                                                    
+
+                    <div class="directory-section source-section">
+                        <h3>Arquivos de Origem (Pacote Gráfico da By Store)</h3>
+                        <p>Selecione as pastas do pacote gráfico que você deseja instalar</p>
+
+                        <div class="directory-item">
+                            <label for="graphics-mods-dir">Pasta MODS do Gráfico</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="graphics-mods-dir" class="directory-input" placeholder="Selecione a pasta MODS do pacote gráfico" readonly>
+                                <button id="graphics-mods-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta que contém os arquivos MODS do pacote gráfico</small>
+                        </div>
+
+                        <div class="directory-item">
+                            <label for="graphics-plugins-dir">Pasta PLUGINS do Gráfico</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="graphics-plugins-dir" class="directory-input" placeholder="Selecione a pasta PLUGINS do pacote gráfico" readonly>
+                                <button id="graphics-plugins-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta que contém os arquivos PLUGINS do pacote gráfico</small>
+                        </div>
+
+                        <div class="directory-item">
+                            <label for="graphics-gta-dir">Pasta GTA do Gráfico</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="graphics-gta-dir" class="directory-input" placeholder="Selecione a pasta GTA do pacote gráfico" readonly>
+                                <button id="graphics-gta-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta que contém os arquivos GTA do pacote gráfico</small>
+                        </div>
+                    </div>
+
+                    <div class="directory-section destination-section">
+                        <h3>Diretórios de Destino</h3>
+                        <p>Configure os diretórios onde os arquivos serão instalados</p>
+
+                        <div class="directory-item">
+                            <label for="gta-dir">Diretório do GTA V</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="gta-dir" class="directory-input" placeholder="Selecione a pasta de instalação do GTA V" readonly>
+                                <button id="gta-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta principal do GTA V onde está o arquivo GTA5.exe</small>
+                        </div>
+
+                        <div class="directory-item">
+                            <label for="mods-dir">Diretório de MODS</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="mods-dir" class="directory-input" placeholder="Selecione a pasta de MODS" readonly>
+                                <button id="mods-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta onde os mods serão instalados</small>
+                        </div>
+
+                        <div class="directory-item">
+                            <label for="plugins-dir">Diretório de PLUGINS</label>
+                            <div class="directory-input-group">
+                                <input type="text" id="plugins-dir" class="directory-input" placeholder="Selecione a pasta de PLUGINS" readonly>
+                                <button id="plugins-dir-btn" class="directory-btn">
+                                    <i class="fas fa-folder-open"></i> Selecionar
+                                </button>
+                            </div>
+                            <small class="directory-help">Selecione a pasta onde os plugins serão instalados</small>
+                        </div>
+                    </div>
+
+                    <div class="status-section">
+                        <div class="status-box">
+                            <div class="status-item">
+                                <span class="status-label">Status:</span>
+                                <span id="status-text" class="status-value">Aguardando seleção dos diretórios...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions-container">
+                        <div class="action-buttons">
+                            <button id="install-btn" class="primary-btn" disabled>
+                                <i class="fas fa-download"></i> Instalar Gráficos
+                            </button>
+                            <button id="uninstall-btn" class="danger-btn" disabled>
+                                <i class="fas fa-trash-alt"></i> Desinstalar Gráficos
+                            </button>
+                            <button id="restore-btn" class="warning-btn" disabled>
+                                <i class="fas fa-history"></i> Restaurar Backup
+                            </button>
+                        </div>
+                        <div class="reset-container">
+                            <button id="reset-btn" class="reset-btn" title="Resetar configurações para demonstração">
+                                <i class="fas fa-redo-alt"></i> Resetar
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Instalador de Gráficos da By Store - Desenvolvido por <a href="https://skylabs.studio" target="_blank">SKYLABS STUDIO</a></p>
+        </footer>
+
+        <div id="notification" class="hidden">
+            <div id="notification-content"></div>
+            <button id="notification-close"><i class="fas fa-times"></i></button> 
+        </div>
+
+        <div id="loading-overlay" class="hidden">
+            <div class="loader"></div>
+            <div id="loading-message">Processando, por favor aguarde...</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
