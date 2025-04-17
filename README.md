@@ -36,12 +36,12 @@ O Instalador de Gráficos é uma aplicação desktop de código aberto que facil
 
 ### Tecnologias Utilizadas
 
-- **Electron**: Framework para criar aplicações desktop com tecnologias web
-- **JavaScript**: Lógica principal da aplicação
-- **HTML/CSS**: Interface de usuário
-- **Node.js**: Ambiente de execução
-- **electron-store**: Persistência de dados
-- **fs-extra**: Manipulação avançada de arquivos
+- **Electron**: 
+- **JavaScript**:
+- **HTML/CSS**:
+- **Node.js**:
+- **electron-store**: 
+- **fs-extra**: 
 
 
 ### Instalação e Execução
