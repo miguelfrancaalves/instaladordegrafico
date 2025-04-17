@@ -8,7 +8,6 @@ O Instalador de Gráficos é uma aplicação desktop de código aberto que facil
 
 - **Instalação simplificada** de pacotes gráficos completos
 - **Gerenciamento de diretórios** para MODS, PLUGINS e arquivos do GTA V
-- **Backup automático** dos arquivos originais do jogo
 - **Restauração de backup** com um clique
 - **Desinstalação segura** sem afetar arquivos nativos do jogo
 - **Portable** - sem necessidade de instalação
